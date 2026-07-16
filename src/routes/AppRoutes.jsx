@@ -1,15 +1,18 @@
-import { BrowserRouter, Routes, Route  } from "react-router-dom";
-import Home from "../pages/Home"; 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import MainLayout from "../layouts/MainLayout";
+import Home from "../pages/Home";
 
 function AppRoutes() {
-    return (
-        <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Home />} />
-        </Routes>
-        </BrowserRouter>
-    );
-
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default AppRoutes;
