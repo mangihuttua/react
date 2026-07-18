@@ -4,9 +4,9 @@ function Footer() {
     return(
         <footer>
 
-            <div class="container footer-container">
+            <div className="container footer-container">
 
-                <div class="footer-about">
+                <div className="footer-about">
 
                     <h2>Cafe Delight</h2>
 
@@ -17,7 +17,7 @@ function Footer() {
 
                 </div>
 
-                <div class="footer-link">
+                <div className="footer-link">
 
                     <h3>Menu</h3>
 
@@ -30,7 +30,7 @@ function Footer() {
 
                 </div>
 
-                <div class="footer-social">
+                <div className="footer-social">
 
                     <h3>Follow Us</h3>
 
@@ -42,7 +42,7 @@ function Footer() {
 
             </div>
 
-            <div class="copyright">
+            <div className="copyright">
 
                 © 2026 Cafe Delight | All Rights Reserved
 

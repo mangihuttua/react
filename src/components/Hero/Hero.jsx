@@ -1,12 +1,13 @@
 import hero from "../../assets/images/hero.jpg";
 import { Link } from "react-router-dom";
 import { FaCoffee } from "react-icons/fa";
+import Container from "../Container/Container";
+import Button from "../Button/Button"
 
 function Hero() {
   return (
-    <section className="bg-amber-50">
-      <div className="max-w-7xl mx-auto px-6 py-16 md:py-18">
-
+    <section className="bg-amber-50 py-12 md:py-8">
+      <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
           <div className="text-center md:text-left justify-center md:justify-start">
@@ -15,7 +16,7 @@ function Hero() {
               <FaCoffee /> Premium Coffee
             </span>
 
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight max-w-xl text-gray-900">
+            <h1 className="text-5xl md:text-6xl font-extrabold  max-w-xl text-gray-900">
               Fresh Coffee
               <br />
               <span className="text-amber-700">
@@ -30,15 +31,13 @@ function Hero() {
 
             <div className="flex items-center justify-center flex-wrap gap-4 mt-8">
               
-              <Link to="/menu"
-                    className="bg-orange-800 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition">
-                    Explore Menu
-              </Link>
-
-              <Link to="/contact"
-                    className="border-2 border-orange-800 text-orange-800 px-6 py-3 rounded-lg hover:bg-orange-800 hover:text-white transition">
+            <Button variant="primary" to="/menu">
+              Explore Menu
+            </Button>
+            
+              <Button variant="outline" to="/contact">
                     Reserve Table
-              </Link>
+              </Button>
 
             </div>
 
@@ -47,13 +46,13 @@ function Hero() {
           {/* Right Image */}
           <div className="flex justify-center">
             <img src={hero} alt="Fresh Coffee"
-              className="w-full max-w-md rounded-3xl shadow-2xl object-cover"
+                className="w-full max-w-md rounded-3xl shadow-2xl object-cover"
             />
           </div>
 
         </div>
 
-      </div>
+      </Container>
     </section>
   );
 }

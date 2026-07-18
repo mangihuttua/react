@@ -1,47 +1,50 @@
-import "./About.css";
+import Container from "../Container/Container";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function About() {
     return(
-       <section id="about" class="about">
-    <div class="container about-container">
+       <section className="bg-amber-100 py-10">
+         <Container>
 
-        <div class="about-image">
-           img
-        </div>
+            <SectionTitle  title="About Us"
+                           subtitle="Learn more about our story and passion for coffee."/>
 
-        <div class="about-content">
-            <h2>Tentang Cafe Delight</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
 
-            <p>
-                Cafe Delight merupakan tempat yang nyaman untuk menikmati kopi
-                berkualitas, makanan lezat, dan suasana yang hangat. Kami
-                menggunakan biji kopi pilihan yang diseduh oleh barista
-                profesional.
-            </p>
+            <div className="bg-white rounded-xl shadow-md p-6">
+                <h3 className="text-lg font-semibold mb-2">
+                ☕ Premium Coffee
+                </h3>
+                <p className="text-gray-600">
+                Biji kopi pilihan dari petani lokal Indonesia.
+                </p>
+            </div>
 
-            <div class="about-feature">
 
-                <div class="feature-card">
-                    <h3>☕ Premium Coffee</h3>
-                    <p>Biji kopi pilihan dari petani lokal Indonesia.</p>
-                </div>
+            <div className="bg-white rounded-xl shadow-md p-6">
+                <h3 className="text-lg font-semibold mb-2">
+                🥐 Fresh Bakery
+                </h3>
+                <p className="text-gray-600">
+                Roti dan pastry selalu dibuat setiap hari.
+                </p>
+            </div>
 
-                <div class="feature-card">
-                    <h3>🥐 Fresh Bakery</h3>
-                    <p>Roti dan pastry selalu dibuat setiap hari.</p>
-                </div>
 
-                <div class="feature-card">
-                    <h3>🏡 Cozy Place</h3>
-                    <p>Tempat yang nyaman untuk bekerja maupun berkumpul.</p>
-                </div>
+            <div className="bg-white rounded-xl shadow-md p-6">
+                <h3 className="text-lg font-semibold mb-2">
+                🏡 Cozy Place
+                </h3>
+                <p className="text-gray-600">
+                Tempat yang nyaman untuk bekerja maupun berkumpul.
+                </p>
+            </div>
 
             </div>
 
-        </div>
+         </Container>
 
-    </div>
-</section>
+       </section>
     );
 }
 
