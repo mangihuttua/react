@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Button({   children, 
                     variant = "primary", 
                     onClick, 
-                    to 
+                    to,
                     }) {
 
         const baseStyle = "px-6 py-3 rounded-lg font-semibold transition duration-300 inline-flex items-center justify-center";
